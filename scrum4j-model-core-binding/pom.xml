@@ -22,6 +22,11 @@
   		<artifactId>scrum4j-model-core-schema</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+  		<groupId>com.bubblegumproject.scrum4j</groupId>
+  		<artifactId>scrum4j-global-binding</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
    <build>
 		<plugins>
@@ -90,6 +95,13 @@
 								<groupId>com.bubblegumproject.scrum4j</groupId>
 								<artifactId>scrum4j-model-common-binding</artifactId>
 								<resource>jaxb-bindings/scrum4j-common-types.xjb</resource>
+							</dependencyResource>
+						</binding>
+						<binding>
+							<dependencyResource>
+								<groupId>com.bubblegumproject.scrum4j</groupId>
+  								<artifactId>scrum4j-global-binding</artifactId>
+  								<resource>jaxb-bindings/global.xjb</resource>
 							</dependencyResource>
 						</binding>
 					</bindings>

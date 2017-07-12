@@ -285,5 +285,6 @@
   	<module>scrum4j-model-core-binding</module>
   	<module>scrum4j-model-project-schema</module>
   	<module>scrum4j-model-project-binding</module>
+  	<module>scrum4j-global-binding</module>
   </modules>
 </project>
