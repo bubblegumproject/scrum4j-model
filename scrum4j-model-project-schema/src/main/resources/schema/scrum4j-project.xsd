@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema
+	version="1.0"
+	xmlns="urn:schemas-scrum4j:project"
+	targetNamespace="urn:schemas-scrum4j:project"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:common="urn:schemas-scrum4j:common" 
+	xmlns:core="urn:schemas-scrum4j:core"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	jaxb:version="2.1"
+	elementFormDefault="qualified">
+	
+	<xsd:element name="project" type="Project" />
+	<xsd:element name="owner" type="ProjectOwner" />
+	
+	<xsd:complexType name="Project">
+		<xsd:complexContent>
+			<xsd:extension base="core:Entity">
+				<xsd:sequence>
+					<xsd:element ref="owner" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>	
+	
+	<xsd:complexType name="ProjectOwner">
+		<xsd:sequence>
+			<xsd:element name="role">
+				<xsd:complexType>
+					<xsd:attribute name="type" type="common:urn" />
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

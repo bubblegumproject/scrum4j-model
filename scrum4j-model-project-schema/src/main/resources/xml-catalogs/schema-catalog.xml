@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE catalog
+	PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
+		"http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+
+	<rewriteSystem systemIdStartString="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-project.xsd" 
+		rewritePrefix="maven:com.bubblegumproject.scrum4j:scrum4j-model-project-schema!/schema/scrum4j-project.xsd" />
+
+	<public publicId="urn:schemas-scrum4j:project" 
+		uri="maven:com.bubblegumproject.scrum4j:scrum4j-model-project-schema:jar::!/schema/scrum4j-project.xsd" />
+	
+	<!-- Move this into the common schema -->
+	<!-- 
+	<public publicId="http://www.w3.org/1999/xlink" uri="http://www.w3.org/1999/xlink.xsd" />
+	-->
+</catalog>

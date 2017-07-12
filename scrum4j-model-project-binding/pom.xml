@@ -5,13 +5,9 @@
     <artifactId>scrum4j-model-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>scrum4j-model-core-binding</artifactId>
+  <artifactId>scrum4j-model-project-binding</artifactId>
+  
   <dependencies>
-  	<dependency>
-  		<groupId>com.bubblegumproject.scrum4j</groupId>
-  		<artifactId>scrum4j-model-common-binding</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   	<dependency>
   		<groupId>com.bubblegumproject.scrum4j</groupId>
   		<artifactId>scrum4j-model-common-schema</artifactId>
@@ -19,7 +15,22 @@
   	</dependency>
   	<dependency>
   		<groupId>com.bubblegumproject.scrum4j</groupId>
+  		<artifactId>scrum4j-model-common-binding</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.bubblegumproject.scrum4j</groupId>
   		<artifactId>scrum4j-model-core-schema</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.bubblegumproject.scrum4j</groupId>
+  		<artifactId>scrum4j-model-core-binding</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.bubblegumproject.scrum4j</groupId>
+  		<artifactId>scrum4j-model-project-schema</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
@@ -38,7 +49,7 @@
 				</executions>
 				<configuration>
 					<extension>true</extension>
-					<generatePackage>com.bubblegumproject.scrum4j.model.core.schema</generatePackage>
+					<generatePackage>com.bubblegumproject.scrum4j.model.project.schema</generatePackage>
 					<scanDependenciesForBindings>false</scanDependenciesForBindings>
 					<useDependenciesAsEpisodes>false</useDependenciesAsEpisodes>
 					<packageLevelAnnotations>false</packageLevelAnnotations>
@@ -75,13 +86,16 @@
 						<schema>
 							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd</url>
 						</schema>
+						<schema>
+							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-project.xsd</url>
+						</schema>
 					</schemas>
 					<bindings>
 						<binding>
 							<fileset>
 								<directory>${basedir}/src/main/resources/jaxb-bindings</directory>
 								<includes>
-									<include>scrum4j-core.xjb</include>
+									<include>scrum4j-project.xjb</include>
 								</includes>
 							</fileset>
 						</binding>
@@ -90,6 +104,13 @@
 								<groupId>com.bubblegumproject.scrum4j</groupId>
 								<artifactId>scrum4j-model-common-binding</artifactId>
 								<resource>jaxb-bindings/scrum4j-common-types.xjb</resource>
+							</dependencyResource>
+						</binding>
+						<binding>
+							<dependencyResource>
+								<groupId>com.bubblegumproject.scrum4j</groupId>
+								<artifactId>scrum4j-model-core-binding</artifactId>
+								<resource>jaxb-bindings/scrum4j-core.xjb</resource>
 							</dependencyResource>
 						</binding>
 					</bindings>
@@ -108,11 +129,22 @@
 								<resource>xml-catalogs/schema-catalog.xml</resource>
  							</dependencyResource>
  						</catalog>
+ 						<catalog>
+ 							<dependencyResource>
+ 								<groupId>com.bubblegumproject.scrum4j</groupId>
+ 								<artifactId>scrum4j-model-project-schema</artifactId>
+ 								<resource>xml-catalogs/schema-catalog.xml</resource>
+ 							</dependencyResource>
+ 						</catalog>
  					</catalogs>	
  					<episodes>
  						<episode>
  							<groupId>com.bubblegumproject.scrum4j</groupId>
  							<artifactId>scrum4j-model-common-binding</artifactId>
+ 						</episode>
+ 						<episode>
+ 							<groupId>com.bubblegumproject.scrum4j</groupId>
+ 							<artifactId>scrum4j-model-core-binding</artifactId>
  						</episode>
  					</episodes>
 				</configuration>

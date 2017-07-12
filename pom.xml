@@ -283,5 +283,7 @@
   	<module>scrum4j-model-common-binding</module>
   	<module>scrum4j-model-core-schema</module>
   	<module>scrum4j-model-core-binding</module>
+  	<module>scrum4j-model-project-schema</module>
+  	<module>scrum4j-model-project-binding</module>
   </modules>
 </project>
