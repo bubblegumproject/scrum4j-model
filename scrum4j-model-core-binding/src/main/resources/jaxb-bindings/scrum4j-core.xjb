@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jaxb:bindings version="1.0"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	jaxb:extensionBindingPrefixes="xjc"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<jaxb:bindings schemaLocation="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd" node="/xsd:schema">
+	
+	</jaxb:bindings>	
+</jaxb:bindings>

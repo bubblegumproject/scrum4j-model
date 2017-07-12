@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jaxb:bindings version="1.0" 
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	jaxb:extensionBindingPrefixes="xjc" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<jaxb:bindings schemaLocation="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-common-types.xsd" node="/xsd:schema">
+		<jaxb:bindings node="//xsd:simpleType[@name='absoluteURI']">
+			<xjc:javaType name="java.util.UUID" adapter="com.bubblegumproject.scrum4j.common.service.URIAdapter" />
+		</jaxb:bindings>
+		<jaxb:bindings node="//xsd:simpleType[@name='uuid']">
+			<xjc:javaType name="java.util.UUID" adapter="com.bubblegumproject.scrum4j.common.service.UUIDAdapter" />
+		</jaxb:bindings>
+		<jaxb:bindings node="//xsd:simpleType[@name='utcTimestamp']">
+			<xjc:javaType name="java.lang.Long" adapter="com.bubblegumproject.scrum4j.common.service.UTCTimestampAdapter" />
+		</jaxb:bindings>
+		<jaxb:bindings node="//xsd:simpleType[@name='urn']">
+			<xjc:javaType name="de.slub.urn.URN" adapter="com.bubblegumproject.scrum4j.common.service.URNAdapter" />
+		</jaxb:bindings>
+	</jaxb:bindings>
+</jaxb:bindings>
