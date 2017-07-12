@@ -27,6 +27,10 @@
   		<artifactId>scrum4j-global-binding</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<dependency>
+		<groupId>org.hisrc.w3c</groupId>
+		<artifactId>xlink-v_1_0</artifactId>
+  	</dependency>
   </dependencies>
    <build>
 		<plugins>
@@ -80,6 +84,9 @@
 						<schema>
 							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd</url>
 						</schema>
+						<schema>
+							<url>http://www.w3.org/1999/xlink.xsd</url>
+						</schema>
 					</schemas>
 					<bindings>
 						<binding>
@@ -125,6 +132,10 @@
  						<episode>
  							<groupId>com.bubblegumproject.scrum4j</groupId>
  							<artifactId>scrum4j-model-common-binding</artifactId>
+ 						</episode>
+ 						<episode>
+ 							<groupId>org.hisrc.w3c</groupId>
+							<artifactId>xlink-v_1_0</artifactId>
  						</episode>
  					</episodes>
 				</configuration>

@@ -13,13 +13,13 @@
 	elementFormDefault="qualified">
 	
 	<xsd:element name="project" type="Project" />
-	<xsd:element name="owner" type="ProjectOwner" />
+	<xsd:element name="project-owner" type="ProjectOwner" />
 	
 	<xsd:complexType name="Project">
 		<xsd:complexContent>
 			<xsd:extension base="core:Entity">
 				<xsd:sequence>
-					<xsd:element ref="owner" />
+					<xsd:element ref="project-owner" />
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>

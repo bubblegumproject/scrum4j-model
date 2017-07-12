@@ -94,6 +94,9 @@
 						<schema>
 							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-project.xsd</url>
 						</schema>
+						<schema>
+							<url>http://www.w3.org/1999/xlink.xsd</url>
+						</schema>
 					</schemas>
 					<bindings>
 						<binding>
@@ -157,6 +160,10 @@
  						<episode>
  							<groupId>com.bubblegumproject.scrum4j</groupId>
  							<artifactId>scrum4j-model-core-binding</artifactId>
+ 						</episode>
+ 						<episode>
+ 							<groupId>org.hisrc.w3c</groupId>
+							<artifactId>xlink-v_1_0</artifactId>
  						</episode>
  					</episodes>
 				</configuration>

@@ -50,10 +50,18 @@
 	<xsd:complexType name="Person">
 		<xsd:complexContent>
 			<xsd:extension base="Entity">
+				<xsd:sequence>
+					<xsd:element name="mail">
+						<xsd:complexType>
+							<xsd:attribute ref="xlink:href" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:sequence>
 				<!-- 
 					TODO: in the future support xlink
 					<xsd:attribute ref="xlink:href" /> 
 				-->
+				
 			</xsd:extension>
 		</xsd:complexContent>		
 	</xsd:complexType>
