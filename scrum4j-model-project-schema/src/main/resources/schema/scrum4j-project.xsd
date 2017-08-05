@@ -12,6 +12,9 @@
 	jaxb:version="2.1"
 	elementFormDefault="qualified">
 	
+	<xsd:import namespace="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-common-types.xsd" />
+	<xsd:import namespace="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd" />
+	
 	<xsd:element name="project" type="Project" />
 	<xsd:element name="project-owner" type="ProjectOwner" />
 	

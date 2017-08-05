@@ -9,11 +9,8 @@
 	jaxb:version="2.1"
 	elementFormDefault="qualified">
 
-	<!-- 
-		DONT IMPORT DEPENDENT SCHEMAS
-		<xsd:import namespace="http://www.w3.org/1999/xlink" />
-		<xsd:import namespace="urn:schemas-scrum4j:common" />
-	 -->	
+	<xsd:import namespace="http://www.w3.org/1999/xlink" />
+	<xsd:import namespace="http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-common-types.xsd" />
 	 
 	 <xsd:complexType name="Entity" abstract="true">
 	 	<xsd:sequence>

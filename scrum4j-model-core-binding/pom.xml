@@ -79,10 +79,10 @@
 
 					<schemas>
 						<schema>
-							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-common-types.xsd</url>
+							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd</url>
 						</schema>
 						<schema>
-							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-core.xsd</url>
+							<url>http://xml.bubblegumproject.com/2017/scrum4j/scrum4j-common-types.xsd</url>
 						</schema>
 						<schema>
 							<url>http://www.w3.org/1999/xlink.xsd</url>
